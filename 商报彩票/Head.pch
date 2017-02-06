@@ -1,0 +1,28 @@
+//
+//  Head.pch
+//  商报彩票
+//
+//  Created by 涛程 on 16/11/6.
+//  Copyright © 2016年 涛程. All rights reserved.
+//
+
+#ifndef Head_pch
+#define Head_pch
+
+
+
+/*--屏幕的宽高----*/
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+//以640为设计稿
+#define TRANS_VALUE(x) ceil(kScreenWidth * x / 320)
+//以750为设计稿
+#define CONVER_VALUE(x) ceil(kScreenWidth * x / 375)
+
+
+#import "WXDataService.h"
+
+
+#endif /* Head_pch */
+
